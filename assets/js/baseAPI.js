@@ -1,6 +1,6 @@
 $.ajaxPrefilter(function (options) {
   // 拼接根路径
-  options.url = 'http://www.liulongbin.top:3007' + options.url
+  options.url = 'http://big-event-api-t.itheima.net' + options.url
 
   // 有权限的页面携带请求头
   if (options.url.indexOf('/my/') !== -1) {

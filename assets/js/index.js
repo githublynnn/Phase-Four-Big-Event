@@ -51,7 +51,7 @@ function renderAvatar(user) {
   const name = user.nickname || user.username
   $('#welcome').html('欢迎&nbsp;&nbsp;' + name)
   if (user.user_pic !== null) {
-    $('.layui-nav-img').arrt('src', user.user_pic).show()
+    $('.layui-nav-img').attr('src', user.user_pic).show()
     $('.text-avatar').hide()
   } else {
     const first = name[0].toUpperCase()
